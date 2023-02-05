@@ -4,6 +4,14 @@ import java.awt.*;
 import java.util.Arrays;
 
 public class Main {
+    private static double rentalYieldCalculator(double monthlyRent, double originalPropertyPrice) {
+        System.out.println("\nPaying $" + monthlyRent + " monthly, for a $" + originalPropertyPrice + " house...");
+        double yearlyRent = monthlyRent * 12;
+        System.out.println("You pay $" + yearlyRent + " yearly...");
+        double rentalYield = (yearlyRent / originalPropertyPrice) * 100;
+
+        return rentalYield;
+    }
     private static int add(int numberOne, int numberTwo) {
         int result = numberOne + numberTwo;
 
@@ -11,8 +19,11 @@ public class Main {
         return result;
     }
     public static void main(String[] args) {
-        int result = add(10, 10);
-        System.out.println(result);
+//        int result = add(10, 10);
+//        System.out.println(result);
+
+        double rentalYield = rentalYieldCalculator(1_000, 100_000);
+        System.out.println("Your rental yield is: " + rentalYield + "%");
 
         // Left off on exercise portion of AmigosCode video
 //        int[] numbers = new int[3];
