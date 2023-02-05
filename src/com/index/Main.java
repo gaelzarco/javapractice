@@ -4,7 +4,15 @@ import java.awt.*;
 import java.util.Arrays;
 
 public class Main {
+    private static int add(int numberOne, int numberTwo) {
+        int result = numberOne + numberTwo;
+
+        System.out.println(numberOne + " + " + numberTwo);
+        return result;
+    }
     public static void main(String[] args) {
+        int result = add(10, 10);
+        System.out.println(result);
 //        int[] numbers = new int[3];
 //        numbers[0] = 1;
 //        numbers[1] = 2;
@@ -22,21 +30,21 @@ public class Main {
 //        System.out.println(Arrays.toString(newNumbers2));
 
         // Length = 3
-        String[] names = {
-          "Gael",
-          "Chesmeen",
-          "Lucky"
-        };
-
-        if (true) {
-            for (int i = 0; i < names.length; i++) {
-                System.out.println(names[i]);
-            }
-        } else {
-            System.out.println("This is printed when it is false");
-        }
-
-        System.out.println("Code outside if-statement");
+//        String[] names = {
+//          "Gael",
+//          "Chesmeen",
+//          "Lucky"
+//        };
+//
+//        if (true) {
+//            for (int i = 0; i < names.length; i++) {
+//                System.out.println(names[i]);
+//            }
+//        } else {
+//            System.out.println("This is printed when it is false");
+//        }
+//
+//        System.out.println("Code outside if-statement");
 
 //        System.out.println("hello");
 //
