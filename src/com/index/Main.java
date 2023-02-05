@@ -13,6 +13,8 @@ public class Main {
     public static void main(String[] args) {
         int result = add(10, 10);
         System.out.println(result);
+
+        // Left off on exercise portion of AmigosCode video
 //        int[] numbers = new int[3];
 //        numbers[0] = 1;
 //        numbers[1] = 2;
